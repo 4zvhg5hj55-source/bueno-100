@@ -1,0 +1,18 @@
+CGI Andalucía RP - versión Cloudflare Workers
+================================================
+Usuario dev:   dev
+Contraseña:    CGI-Dev#2026!Atlas        (cámbiala desde el Panel Desarrollador al entrar)
+
+DESPLIEGUE (una sola vez, necesitas Node.js 18+ instalado en tu PC y una cuenta de Cloudflare)
+  1. Descomprime el zip y abre una terminal dentro de la carpeta.
+  2. npm install
+  3. npx wrangler login          (se abre el navegador; autoriza)
+  4. npx wrangler deploy
+  5. Te dará una URL tipo  https://cgi-andaluciarp.TU-CUENTA.workers.dev
+
+DATOS
+  - Se guardan en una base de datos SQLite persistente (Durable Object). No se borran al redesplegar.
+  - Haz copias de seguridad con el botón de copia del Panel Desarrollador (/api/backup).
+
+SI PIERDES EL ACCESO A "dev"
+  - En wrangler.jsonc añade   "vars": { "DEV_RESET": "1" }   ->  npx wrangler deploy  -> entra con dev -> quita la línea y vuelve a desplegar.

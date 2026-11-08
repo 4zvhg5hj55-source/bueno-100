@@ -1,0 +1,9 @@
+{
+  "name": "cgi-andaluciarp",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Web de la CGI - uso exclusivo de Andalucía RP (ficción de rol) - Cloudflare Workers",
+  "scripts": { "deploy": "wrangler deploy", "dev": "wrangler dev" },
+  "devDependencies": { "wrangler": "^4.0.0" }
+}

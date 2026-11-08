@@ -1,0 +1,11 @@
+{
+  "name": "cgi-andaluciarp",
+  "main": "src/worker.js",
+  "compatibility_date": "2025-10-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": { "directory": "./public" },
+  "durable_objects": { "bindings": [{ "name": "CGI", "class_name": "CGI" }] },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["CGI"] }],
+  "observability": { "enabled": true }
+  // Si te quedas sin acceso a la cuenta dev: añade  "vars": { "DEV_RESET": "1" }  , despliega, entra, y quítalo.
+}
